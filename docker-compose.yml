@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  todo-lists:
+    build:
+      context: ./todo-lists
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Exposed backend API on port 3000
+    networks:
+      - todo-network
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./todo-lists/db:/app/db
+
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    ports:
+      - "3006:3006"
+    environment:
+      REACT_APP_API_URL: "http://localhost:3000"  # Backend API URL
+    networks:
+      - todo-network
+    depends_on:
+      - todo-lists
+
+networks:
+  todo-network:
+    driver: bridge
+

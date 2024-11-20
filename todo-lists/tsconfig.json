@@ -1,0 +1,29 @@
+{
+  "extends": "fastify-tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "target": "es2020", 
+    "module": "NodeNext", 
+    "moduleResolution": "NodeNext", 
+    "lib": [
+      "es2020", 
+      "dom" 
+    ],
+    "strict": true, 
+    "noImplicitAny": false, 
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "esModuleInterop": true, 
+    "skipLibCheck": true, 
+    "resolveJsonModule": true 
+  },
+  "include": [
+    "src/**/*.ts", 
+    "src/utils/schemaGenerator.js" 
+  ],
+  "exclude": [
+    "node_modules", 
+    "**/*.spec.ts" 
+  ]
+}
