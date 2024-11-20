@@ -6,29 +6,6 @@ exports.editLists = editLists;
 exports.addListItem = addListItem;
 exports.removeListItem = removeListItem;
 exports.editListItem = editListItem;
-const enum_1 = require("../enum");
-const staticLists = [
-    {
-        id: 'l-1',
-        description: 'Dev tasks',
-        items: [{
-                id: "i-1",
-                nom: "Task 1 ",
-                description: "This is the desc1",
-                status: enum_1.Status.PENDING
-            }]
-    },
-    {
-        id: 'l-2',
-        description: 'Test tasks',
-        items: [{
-                id: "i-2",
-                nom: "Task  ",
-                description: "This is the desc2",
-                status: enum_1.Status.DONE
-            }]
-    },
-];
 async function listLists(request, reply) {
     console.log('DB status', this.level.db.status);
     const listsIter = this.level.db.iterator();

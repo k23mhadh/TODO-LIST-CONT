@@ -1,0 +1,2 @@
+.item-container{align-items:center;display:flex;flex-direction:row;justify-content:space-between;text-align:left;width:100%}.text-content{text-align:left}.button-container{display:flex;gap:10px;justify-content:flex-end}.edit-button{background-color:blue;border:none;color:#fff;cursor:pointer;padding:5px 10px}.edit-button:hover{background-color:#00008b}.delete-button{background-color:red;border:none;color:#fff;cursor:pointer;padding:5px 10px}.delete-button:hover{background-color:darkred}
+/*# sourceMappingURL=main.239dfd1a.css.map*/

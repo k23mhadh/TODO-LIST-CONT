@@ -1,0 +1,53 @@
+/* Container to arrange content in a row and push buttons to the end */
+.item-container {
+  display: flex;
+  flex-direction: row;        /* Arrange children (text and buttons) in a row */
+  align-items: center;        /* Center elements vertically */
+  justify-content: space-between; /* Push items to the ends (left for text, right for buttons) */
+  width: 100%;                /* Ensure the container takes full width */
+  text-align: left;           /* Align text to the left */
+}
+
+/* The section containing the name, description, and status */
+.text-content {
+  text-align: left;   /* Align text to the left */
+}
+
+/* Button container for holding both buttons */
+.button-container {
+  display: flex;
+  gap: 10px;           /* Adds space between the buttons */
+  justify-content: flex-end; /* Align the buttons to the right */
+}
+
+.ed-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+/* Styling for the Edit button */
+.edit-button {
+  background-color: blue;  /* Blue color for the Edit button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: darkblue;  /* Darker blue on hover */
+}
+
+/* Styling for the Delete button */
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;  /* Darker red on hover */
+}

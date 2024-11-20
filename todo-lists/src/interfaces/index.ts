@@ -10,6 +10,6 @@ export interface ITodoList {
     id: string
     nom?: string,
     description?:string,
-    status? : Status
+    status: Status
   }
 

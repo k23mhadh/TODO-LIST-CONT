@@ -2,7 +2,7 @@ import { FastifyReply, FastifyRequest } from "fastify"
 import { IItem, ITodoList } from "../interfaces"
 import { Status } from "../enum"
 
-const staticLists: ITodoList[] = [
+/* const staticLists: ITodoList[] = [
   {
 	id: 'l-1',
 	description: 'Dev tasks',
@@ -23,7 +23,7 @@ const staticLists: ITodoList[] = [
     status: Status.DONE
   }]
   },
-]
+] */
 
 // Function to list all todo lists
 export async function listLists(
